@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="google.css">
+        <style>
+            p {
+                position:absolute;
+                font-family: Arial, Helvetica, sans-serif;
+                color: royalblue;
+                left: 35%;
+                margin: 105px 325px;
+            }
+            #image_box {
+                position: relative;
+                display: inline-block;
+                color: grey;
+                border-color: white;
+                left: 160px;
+                top: 15px;
+                height: 35px;
+                width: 135px;
+                border-radius: 5px;
+            }
+            #image_box:hover {
+                border-color: grey;
+            }
+        </style>
+    </head>
+    <body>
+        <p>images</p>
+        <div class="centered_items">
+            <img src="google_logo.png" alt="Google logo">
+            <form action="https://google.com/images">
+                <input class="search_bar" type="text" name="q">
+                <div><input id="image_box" type="submit" name="btnK" value="Image Search"></div>
+            </form>
+        </div>
+        <div class="links">
+            <a href="google_search.html">Google Search</a>
+        </div>
+    </body>
+</html>

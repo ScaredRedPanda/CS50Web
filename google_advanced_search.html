@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <link rel="stylesheet" href="google.css">
+        <style>
+            #adv {color:red;
+                font-size:20px;
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 25px 20px 20px 45px;
+            }
+            hr.solid {
+                border-top: 1px solid #bbb;
+            }
+            div p {
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 15px 20px 15px 45px;
+                font-size: 13px;
+                display: inline-block;
+                ;
+            }
+            .box {
+                display: inline-block;
+                width: 40%;
+                height: 25px;
+                position: fixed;
+                left: 250px;
+                
+            }
+            .box:focus {
+                border-color: lightskyblue;
+
+            }
+            #adv_sub {
+                position: relative;
+                background-color: royalblue;
+                color:whitesmoke;   
+                top: 10px;
+                left: 40%;
+                width: 140px;  
+                height: 35px;
+                font-size: 12px; 
+                margin: 0 0 0 111px;   
+            }
+            #adv_sub:hover {
+                background-color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="background-color:rgb(240,240,240);">
+            <img style="width:100px;margin: 10px 0px 5px 10px;" src="google_logo.png" alt="Google logo">
+        </div>
+        <p id="adv">Advanced search</p>
+        <hr class="solid">
+        <div style="margin:20px 0 0 0;">
+            <p style="font-size: 16px;">Find pages with…</p>
+            <form action="https://google.com/search">
+                <div>
+                    <p>all these words:</p>
+                    <input class="box" type="text" name="as_q">
+                </div>
+                <div>
+                    <p>this exact word or phrase:</p>
+                    <input class="box" type="text" name="as_epq">
+                </div>
+                <div>
+                    <p>any of these words:</p>
+                    <input class="box" type="text" name="as_oq">
+                </div>
+                <div style="position: relative;width: 70%;top: 0;">
+                    <p>none of these words:</p>
+                    <input class="box" type="text" name="as_eq">
+                </div>
+                <div>              
+                    <input id="adv_sub" type="submit" value="Advanced Search">
+                </div>
+            </form>
+        </div>
+        <div class="links">
+            <a href="google_search.html">Google Search</a>
+        </div>
+    </body>
+</html>
